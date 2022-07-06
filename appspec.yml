@@ -4,6 +4,3 @@ files:
     - source: /
       destination: /home/ec2-user/build
       overwrite: yes
-hooks:
-    ApplicationStart:
-      - location: scripts/deploy.sh
