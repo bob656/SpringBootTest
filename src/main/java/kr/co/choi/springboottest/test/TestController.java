@@ -15,7 +15,7 @@ public class TestController {
     @RequestMapping(value="parameter", method= RequestMethod.GET)
     public ResponseEntity<String> getParameterTest(@RequestParam(value="msg")String msg ){
         log.debug("안녕하세요");
-        return new ResponseEntity<>(msg +"메시지입니다. 저기요 하이요", HttpStatus.OK);
+        return new ResponseEntity<>(msg +" 안녕하세요 .메시지입니다. 저기요 하이요", HttpStatus.OK);
 
     }
 
