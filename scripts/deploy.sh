@@ -1,5 +1,5 @@
 #!/bin/bash
-BUILD_JAR=$(ls /home/ec2-user/build/*.jar)     # jar가 위치하는 곳
+BUILD_JAR=$(ls /home/ec2-user/build/build/libs/SpringBootTest-0.0.1-SNAPSHOT.jar)     # jar가 위치하는 곳
 JAR_NAME=$(basename $BUILD_JAR)
 echo "> build 파일명: $JAR_NAME" >> /home/ec2-user/deploy.log
 
