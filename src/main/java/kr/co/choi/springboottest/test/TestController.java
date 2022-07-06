@@ -13,9 +13,9 @@ import lombok.extern.log4j.Log4j2;
 public class TestController {
 
     @RequestMapping(value="parameter", method= RequestMethod.GET)
-    public ResponseEntity<String> getParameterTest(@RequestParam(value="msg")String msg){
+    public ResponseEntity<String> getParameterTest(@RequestParam(value="msg")String msg ){
         log.debug("안녕하세요");
-        return new ResponseEntity<>(msg, HttpStatus.OK);
+        return new ResponseEntity<>(msg +"메시지입니다.", HttpStatus.OK);
 
     }
 
