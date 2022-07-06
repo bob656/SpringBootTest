@@ -5,5 +5,5 @@ files:
       destination: /home/ec2-user/build
       overwrite: yes
 hooks:
-    ApplicationStart:
+  AfterInstall:
       - location: scripts/deploy.sh
